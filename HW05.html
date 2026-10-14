@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!-- 宣告使用 HTML5；DOCTYPE 是文件類型宣告，不需要結束標籤。 -->
+<html lang="zh-Hant">
+<!-- html 包住整份文件；lang="zh-Hant" 表示主要使用繁體中文。 -->
+<head>
+    <!-- head 放網頁資訊；這些資訊不會直接成為頁面中的報導文字。 -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 可正確處理中文；meta 是空元素，不寫結束標籤。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport 讓行動裝置使用裝置寬度；不代表固定寬度的圖片會自動縮小。 -->
+    <meta name="description" content="從日治時期的警察宿舍到今日的文學園區，一起走進老建築與文學的盛宴中。">
+    <!-- description 提供網頁摘要；author 標示作者。 -->
+    <meta name="author" content="HTML 林瑀宸">
+    <title>台中文學館｜老屋裡的文學時光</title>
+    <!-- title 顯示在瀏覽器分頁；與 body 中的 h1 用途不同。 -->
+</head>
+
+<body>
+    <!--
+        第四次作業：一頁式台中公園報導。
+        本範例僅使用 HTML，保留瀏覽器預設呈現，不加入 CSS 或 JavaScript。
+        註解使用「小於符號、驚嘆號、兩個連字號」開始，並以兩個連字號及大於符號結束。
+        註解不會顯示於網頁，但讀者可從原始碼看見，因此不要放私人資料。
+        使用一致的四個空格縮排；成對標籤都明確寫出結束標籤。
+    -->
+
+    <!-- header 是頁首；id="top" 是下方「回到頁首」連結的目的地。 -->
+    <header id="top">
+        <!-- h1 是本頁主標題；h2 用於各章節，依內容階層選用標題。 -->
+        <h1>走進文字的時光：台中文學館之旅</h1>
+        <p>從日治時期的警察宿舍到今日的文學園區，一起走進老建築與文學的盛宴中。</p>
+        <!-- time 的 datetime 以標準日期格式提供機器可讀的日期。 -->
+        <p>作者：林瑀宸｜報導整理日期：<time datetime="2026-10-14">2026 年 10 月 14 日</time></p>
+        <p><small>本文為資料整理型教學報導，非現場採訪紀錄。</small></p>
+    </header>
+
+    <!-- nav 表示導覽區；href="#名稱" 會跳到本頁相同 id 的元素。 -->
+    <nav aria-label="報導目錄">
+        <h2>報導目錄</h2>
+        <ul>
+            <li><a href="#intro">文學館簡介</a></li>
+            <li><a href="#highlights">景點介紹</a></li>
+            <li><a href="#table">景點比較表</a></li>
+            <li><a href="#photo">文學館照片</a></li>
+            <li><a href="#video">影音報導</a></li>
+            <li><a href="#sources">資料來源</a></li>
+        </ul>
+    </nav>
+
+    <!-- hr 表示內容主題的分隔，也是沒有結束標籤的空元素。 -->
+    <hr>
+
+    <!-- main 包住本頁主要內容；article 表示可獨立閱讀的完整報導。 -->
+    <main>
+        <article aria-label="台中文學館專題報導">
+            <!-- section 將報導分成有標題的章節；同一頁中的 id 不可重複。 -->
+            <section id="intro">
+                <h2>一、文學館簡介</h2>
+                <!-- p 表示段落；strong 強調重要資訊，不用來取代標題。 -->
+                <p>
+                   臺中文學館位於臺中市西區樂群街，是一座結合歷史建築、文學展覽與文化教育的特色景點。館區原為日治時期的警察宿舍，後經修復與活化再利用，於 2016 年 8 月全面開放。
+                </p>
+                <p>
+                    整個園區保留日式木造建築的風貌，並透過常設展覽、多媒體互動及文學推廣活動，介紹臺中文學的發展歷程與在地作家的創作成果。
+                </p>
+                <p>
+                    這裡不僅是認識臺中歷史與文學的重要場所，也是民眾散步、欣賞老建築及感受人文氣息的好去處。
+                </p>
+                <!-- br 僅用於同段文字中需要的換行；不要用很多 br 製造間距。 -->
+                <p>地址：臺中市西區廣民里樂群街38號。</p>
+            </section>
+
+            <section id="highlights">
+                <h2>二、景點介紹</h2>
+                <h3>三大看點</h3>
+                <!-- ul 是無序清單；li 是個別項目，適合不分先後的資訊。 -->
+                <ul>
+                    <li><strong>歷史建築與日式宿舍：</strong>臺中文學館的前身是日治時期的警察宿舍，建築保留了日式官舍的特色。經過修復後，老屋重新融入現代文化空間，讓遊客在參觀時，也能了解臺中的歷史背景與建築之美。</li>
+                    <li><strong>台中文學常設展：</strong>館內展示臺中文學的發展歷程，介紹不同時期的文學活動、文學社團、刊物與作家。透過文字、影像及互動展示，讓遊客認識臺中如何成為臺灣文學發展的重要據點。</li>
+                    <li><strong>文學公園與庭園景觀：</strong>園區結合老樹、植栽、步道與歷史建築，營造寧靜且富有詩意的環境。遊客可以在此散步、欣賞老屋，也能從自然景觀中感受文學與生活之間的連結。</li>
+                </ul>
+            </section>
+
+            <section id="table">
+                <h2>三、景點比較表</h2>
+                <!--
+                    table 用於呈現資料，不用來排版整個網頁。
+                    本作業維持純 HTML，表格沒有額外的框線樣式。
+                    不使用已過時的 border、cellpadding、cellspacing 屬性。
+                -->
+                <table border="1">
+                    <!-- caption 是表格標題，放在 table 內最前面。 -->
+                    <caption>台中文學館三處景點的特色與觀察重點</caption>
+                    <!-- thead 包住表頭；tr 是一橫列；th 是標題儲存格。 -->
+                    <thead>
+                        <tr>
+                            <!-- scope="col" 表示這個 th 是整欄的標題。 -->
+                            <th scope="col">景點名稱</th>
+                            <th scope="col">主要特色</th>
+                            <th scope="col">建議觀察重點</th>
+                        </tr>
+                    </thead>
+                    <!-- tbody 包住資料列；td 是一般資料儲存格。 -->
+                    <tbody>
+                        <tr>
+                            <!-- scope="row" 表示這個 th 是本列的標題。 -->
+                            <th scope="row">常設展一館</th>
+                            <td>以「時間」為主軸，介紹臺中文學的發展歷程、文學社團及重要文學事件。</td>
+                            <td>以「時間」為主軸，介紹臺中文學的發展歷程、文學社團及重要文學事件。</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">常設館二館</th>
+                            <td>以「人物」為主題，介紹臺中作家的生平、作品及創作故事，並結合多媒體展示。</td>
+                            <td>觀察作家群像牆、作家作品與生活情境展示，認識臺中作家的文學貢獻。</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">日式歷史建築與文學公園</th>
+                            <td>原為日治時期的警察宿舍，1932 年落成，保留日式建築特色，並結合園區綠地與休憩空間。</td>
+                            <td>觀察木造建築、屋頂、門窗及庭園景觀，了解歷史建築保存與文化空間再利用的意義。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="photo">
+                <h2>四、文學館照片</h2>
+                <!-- figure 將圖片與圖說組成一個單位；figcaption 是圖說。 -->
+                <figure>
+                    <!--
+                        img 是空元素，不寫 /img 結束標籤。
+                        src 指定圖片網址；本範例使用外部圖片，需要連線才能載入。
+                        alt 描述照片內容，圖片未載入時或使用螢幕閱讀器時仍可理解。
+                        width 控制顯示寬度；未指定 height，瀏覽器依原圖比例顯示。
+                    -->
+                    <img
+                        src="台中文學館.jpg"
+                        alt="台中文學館展覽區"
+                        width="480">
+                    <figcaption>
+                        常態展覽館是台中文學館的重要展區。
+                        圖片來源：<a href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/971">「大玩台中」官方網頁</a>。
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="video">
+                <h2>五、影音報導</h2>
+                <p>透過下方影片認識台中文學館，再比較影片畫面與本文介紹的景點。</p>
+                <!--
+                    iframe 將 YouTube 播放器嵌入本頁，需要明確的結束標籤。
+                    src 使用 /embed/影片ID，不是一般的 /watch?v=影片ID 網址。
+                    width、height 設定播放器尺寸；title 說明嵌入內容。
+                    allow 開放所列功能；allowfullscreen 允許全螢幕播放。
+                    referrerpolicy 保留跨站來源資訊；仍須由瀏覽器提供有效來源。
+                    直接開本機檔案時，YouTube 可能因缺少 HTTP Referer 而出現錯誤 153。
+                    若發生此情況，請用本機 HTTP 伺服器預覽，或使用下方原始影片連結。
+                    播放也取決於網路、YouTube 及發布者的嵌入設定。
+                -->
+                <iframe
+                    width="480"
+                    height="270"
+                    src="https://www.youtube.com/embed/T0ZPz6OhCOg?si=G8Ofx8qW_JQMfto7" title="台中文學館影片"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <!-- a 提供一般影片連結；播放器無法播放時仍能前往 YouTube。 -->
+                <p>
+                    若播放器無法播放，請
+                    <a href="https://youtu.be/T0ZPz6OhCOg?si=UgMpndQgEIFHeKgO" target="_blank" rel="noopener noreferrer">在 YouTube 觀看台中文學館介紹影片（另開分頁）</a>。
+                </p>
+                <p><small>影片為外部作者發布的歷史介紹，現場狀況請以最新官方資訊為準。</small></p>
+            </section>
+        </article>
+    </main>    <section id="map">
+                <h2>六、位置地圖：找到台中文學館</h2>
+                <p>台中文學館位於台中市西區，地址為<strong>廣民里樂群街38號</strong>。
+                    下方地圖標示本文介紹的文學館位置，方便讀者對照景點與周邊街道。</p>
+                <!--
+                    Google 地圖以座標定位，q 指定緯度 24.144818、經度 120.68447，output=embed 回傳嵌入版。
+                    網址的 & 在 HTML 中寫成 &amp;。不需在本教學檔放入 API 金鑰。
+                    title 說明地圖用途；loading="lazy" 延後載入較下方的外部內容。
+                    iframe 必須寫結束標籤；width 與 height 設定顯示尺寸。
+                    地圖需連網；另提供一般地圖連結，載入失敗時仍可開啟。
+                -->
+                <iframe
+                    src="https://maps.app.goo.gl/Ed26JjvnLy2K3ZCU7"
+                    width="480"
+                    height="360"
+                    title="台中文學館位置 Google 地圖"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <p><a href="https://maps.app.goo.gl/vtPfxzfHUNhtGjfV8">在 Google 地圖開啟台中文學館（另開分頁）</a></p>
+                <p><small>位置查詢由 Google 地圖提供；抵達後請依現場導覽牌確認入口。</small></p>
+            </section>
+
+            <hr>
+            <!--
+                aside 放與報導相關、但可獨立省略的補充資訊。
+                此處是走讀提醒，不用來取代主要景點介紹。
+                純 HTML 下會依文件順序顯示；aside 不會自動移到右側。
+            -->
+            <aside id="tips" aria-labelledby="tips-title">
+                <h2 id="tips-title">走讀小提醒</h2>
+                <!-- details 與 summary 提供瀏覽器原生收折功能，不需要自寫 JavaScript。 -->
+                <details open>
+                    <summary>出發前記得這三件事!</summary>
+                    <ul>
+                        <li>出發前確認資訊： 事先查詢台中文學館的開放時間與展覽資訊，並依天氣準備飲用水、防曬用品或雨具。</li>
+                        <li>尊重歷史建築： 參觀日式宿舍與文學展覽時，遵守場館規定，不任意觸碰展品，拍照前先確認相關規範。</li>
+                        <li>記錄走讀心得： 透過文字或照片記錄建築特色、展覽內容與參觀感受，整理報導時記得註明資料來源。</li>
+                    </ul>
+                </details>
+            </aside>
+
+            <hr>
+            <section id="sources">
+                <h2>七、資料來源</h2>
+                <p>本報導依下列資料整理。</p>
+                <!--
+                    target="_blank" 另開分頁；rel 保護開啟新頁面的關聯。
+                    網址中的 & 在 HTML 原始碼中寫成 &amp;。
+                -->
+                <ul>
+                    <li><a href="https://www.tlm.taichung.gov.tw/active/index.aspx?Parser=30%2C7%2C126">台中文學館：展覽 </a></li>
+                    <li><a href="https://www.tlm.taichung.gov.tw/content/index.aspx?Parser=1%2C3%2C22" target="_blank" rel="noopener noreferrer">臺中文學館：館舍沿革</a></li>
+                    <li><a href="https://youtu.be/T0ZPz6OhCOg?si=UgMpndQgEIFHeKgO" target="_blank" rel="noopener noreferrer">YouTube：台中文學館介紹影片</a></li>
+                </ul>
+                <p><small>資料整理日期：2026 年 10 月 11 日。</small></p>
+            </section>
+    <hr>
+    <!-- footer 是頁尾；來源與作者標示應依自己的作品修改。 -->
+    <footer>
+        <p><strong>第五次 HTML 作業｜台中文學館報導</strong></p>
+        <p><small>作者：林瑀宸 · 更新日期：2026 年 10 月 14 日</small></p>
+        <p><small>文字依來源整理；照片與影片權利屬原作者。</small></p>
+        <p><a href="#top">回到頁首</a></p>
+    </footer>
+</body>
+</html>
